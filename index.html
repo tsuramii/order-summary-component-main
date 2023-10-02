@@ -13,27 +13,47 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./output.css">
-</head> 
+</head>
 
-<body>
+<body class="bg-paleblue font-redhat">
+  <picture>
+    <source srcset="./images/pattern-background-mobile.svg" media="(max-width: 767px)">
+    <source srcset="./images/pattern-background-desktop.svg" media="(min-width: 768px)">
+    <img src="./images/pattern-background-mobile.svg" alt="Desktop pattern background"
+      class="absolute -z-50 w-full h-1/2">
+  </picture>
+  <main class="min-h-[95vh] flex flex-col items-center justify-center">
+    <section class="max-w-xs rounded-2xl text-center shadow-desaturatedblue shadow-2xl bg-white">
+      <img src="./images/illustration-hero.svg" alt="A girl dancing to a song" class="rounded-t-2xl">
+      <div class="p-5">
+        <h1 class="text-darkblue text-xl font-black">Order Summary</h1>
+        <p class="my-5 text-desaturatedblue"> You can now listen to millions of songs, audiobooks, and podcasts on any
+          device anywhere you like!</p>
+        <div class="bg-verypaleblue rounded-2xl p-3 flex justify-between text-sm font-bold">
+          <img src="./images/icon-music.svg" alt="Music icon">
+          <p>
+            <span class="font-bold text-darkblue">Annual Plan</span>
+            <span class="text-desaturatedblue">$59.99/year</span>
+          </p>
+          <button class="text-brightblue underline">Change</button>
+        </div>
+        <button
+          class="bg-brightblue shadow-paleblue shadow-xl z-50 my-5 p-3 w-full rounded-lg text-verypaleblue text-sm">Proceed
+          to Payment</button>
+        <button class="font-black text-desaturatedblue text-sm w-full mb-3">Cancel Order</button>
+      </div>
+    </section>
+  </main>
 
-  Order Summary
+  <footer class="text-center text-sm min-h-[5vh] text-softblue [&>a]:text-darkblue bg-paleblue">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      class="underline underline-offset-2 transition-colors hover:text-cyan">Frontend
+      Mentor</a>. Coded by
+    <a href="https://linkedin.com/in/luca-di-marco" target="_blank"
+      class="underline underline-offset-2 transition-colors hover:text-cyan">tsu</a> 😼.
+  </footer>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
